@@ -1,0 +1,122 @@
+S S1 S2
+
+S1 M O
+M M1 TZ
+M1 M2 N
+TZ ;
+M2 MODULE
+
+S2 B E
+B B1 P
+B1 BEGIN
+E E1 N1
+E1 END
+N1 N TO
+TO .
+
+N = ident
+
+O = NUL
+O = C_V_F
+C = CONST_R1_;_O
+V = VAR_R2_;_O
+R2 = SIP_:_TYPE
+SIP = N_{,_N}
+F = RP_;_O_BEGIN_P_END_N_;_O
+O = NUL
+P = P1
+P1 = OO
+P1 = PO
+OO = OE
+OO = OF
+OO = NUL
+OE = V1_:=_A
+OF = N_(_FP_)
+FP = ,_FP
+FP = V1
+FP = NUL
+PO = OW
+PO = UO
+UO = IF_LA_THEN_P1_EI_END
+EI = ELSEIF_LA_THEN_P1_EI_END
+EI = ELSE_P1_THEN_P1_END
+EI = NUL
+OW = WHILE_LA_DO_P1_END
+A = AA
+A = LA
+A = LE
+A = SA
+AA = SL_OS_AA
+OS = NUL
+AA = NUL
+OS = +
+OS = -
+SL = MN_OM_SL
+OM = NUL
+OM = *_/_MOD_DIV
+MN = VE
+MN = CE
+MN = (_AA_)
+MN = V1
+LE = CL
+LE = VL
+SA = NIL
+SA = VS
+LA = PLA
+LA = SO
+PLA = PLA_OR_LS
+PLA = LS
+LS = LS_AND_LM
+LS = LM
+LM = CB
+LM = VB
+LM = (_LA_)
+SO = AA_OSR_AA
+SO = PLA_OSR_PLA
+SO = LE_OSR_LE
+SO = SA_=_SA
+SO = SA_<>_SA
+OSR = =
+OSR = <>
+OSR = <=
+OSR = >=
+OSR = <
+OSR = >
+IN = CHISLO
+V1 = N
+V1 = <number>
+R1 = N_=_C1
+C1 = ZN_CHISLO
+C1 = CL
+ZN = NUL
+ZN = -
+SID = ID_{,ID}
+OTYPE = N_=_TYPE
+TYPE = N
+TYPE = RTYPE
+TYPE = PTYPE
+PTYPE = POINTER_TO_N
+RTYPE = ARRAY_[_IN_{,IN}_]_OF_TYPE
+CTYPE = RECORD_SPOL_;_END
+SPOL = SEC_{;_SEC}
+SEC = R2
+RP = PROCEDURE_N_FORMALP
+FORMALP = NUL
+FORMALP = (_SPP_)
+SPP = SFP_{SPP_;_SFP}
+SFP = PZN
+SFP = PV
+PZN = SID_:_N
+PV = VAR_SID_:_N
+N3 = N
+N2 = N
+N1 = N
+N = <symbol> {N}
+N = N_<number>
+CHISLO = INT
+CHISLO = FLOAT
+INT = <number>_{<number}
+<number> = 0..9
+FLOAT = INT_._INT
+CL = '_<symbol>_'
+<symbol> = 'a'..'z'| 'A'..'Z'

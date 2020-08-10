@@ -1,0 +1,57 @@
+25 k
+MODULE
+END
+VAR
+INTEGER
+REAL
+CONST
+BOOLEAN
+BEGIN
+WHILE
+DO
+CHAR
+AND
+OR
+NOT
+IF
+THEN
+ELSE
+ARRAY
+OF
+POINTER
+TO
+PROCEDURE
+DIV
+MOD
+ELSEIF
+
+7
+5 r
+;
+.
+,
+:
+"
+2 q
+{
+}
+2 s
+(
+)
+2 i
+[
+]
+6 b
+>
+<
+=
+>=
+<=
+<>
+4 a
++
+-
+*
+/
+1 x
+:=
